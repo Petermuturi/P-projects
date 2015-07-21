@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class jane {
+ public static void main(String arg[]){
+	 System.out.println("Hey my name is Jane,and I'm looking for a guy with specifc qualities to go out with\n"
+	 		+ "Please go through this test, and help me know a little about you.\n"
+	 		+ "How old are you?");
+	 int x = 0;
+	 int y = 0;
+	 Scanner age = new Scanner(System.in);
+	 int ae = age.nextInt();
+	 if(ae >= 26){
+		 x+= 10;
+	 }System.out.println("Interesting.\n"
+	 		+ "do you work?(yes / no)");
+	 Scanner wrk = new Scanner(System.in);
+	 String yn = wrk.nextLine();
+	 if(yn == "yes"){
+		 y+=10;
+	 }
+	 int z = x+y;
+	 System.out.println(z);
+ }
+}
